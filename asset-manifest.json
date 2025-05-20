@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Famms-Shopping/static/css/main.0754855e.css",
+    "main.js": "/Famms-Shopping/static/js/main.83a30f68.js",
+    "static/js/453.a2379d03.chunk.js": "/Famms-Shopping/static/js/453.a2379d03.chunk.js",
+    "index.html": "/Famms-Shopping/index.html",
+    "main.0754855e.css.map": "/Famms-Shopping/static/css/main.0754855e.css.map",
+    "main.83a30f68.js.map": "/Famms-Shopping/static/js/main.83a30f68.js.map",
+    "453.a2379d03.chunk.js.map": "/Famms-Shopping/static/js/453.a2379d03.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0754855e.css",
+    "static/js/main.83a30f68.js"
+  ]
+}
