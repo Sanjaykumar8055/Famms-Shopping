@@ -1,0 +1,142 @@
+nav {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav img {
+    margin-right: 1rem;
+    padding: 0.3125rem;
+    width: 250px;
+}
+
+.navItem {
+    letter-spacing: 1px;
+}
+
+.navItem ul {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navItem ul li {
+    position: relative;
+    cursor: pointer;
+}
+.navItem ul li a.active,
+.show-pages{
+    color: #f7444e;
+}
+
+.navItem ul li ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: rgb(215, 250, 232);
+    padding: 5px;
+    line-height: 25px;
+    box-shadow: 0 0 2px 0.1px black;
+    z-index: 1;
+}
+
+.navItem ul li.show-pages ul {
+    display: block;
+}
+
+.navItem ul li ul li {
+    cursor: default;
+}
+
+.navItem ul li ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navItem ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navItem ul li.active>a {
+    color: #f7444e;
+}
+
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cart-count {
+    display: block;
+    position: absolute;
+    top: -19px;
+    right: -4px;
+    font-size: 20px;
+    color: #f7444e;
+}
+
+.hembargar {
+    display: none;
+}
+
+.addcart {
+    display: none;
+}
+
+@media only screen and (max-width:415px) {
+    nav {
+        width: 100%;
+        justify-content: flex-start;
+        position: relative;
+        z-index: 1;
+
+    }
+
+    .hembargar {
+        display: block;
+        position: absolute;
+        right: 15px;
+    }
+
+    nav img {
+        width: 180px;
+    }
+
+    .navItem ul {
+        flex-direction: column;
+        gap: 45px;
+        padding: 30px 35px 30px 10px;
+        position: absolute;
+        background-color: aliceblue;
+        right: 0px;
+        top: 50px;
+        transform: translateX(150px);
+        transition: linear 0.5s;
+        z-index: 100;
+    }
+
+    .navItem ul.visibale {
+        transform: translateX(0)
+    }
+
+    .navItem ul ul {
+        margin-right: 127px;
+        margin-top: -30px;
+    }
+
+    .cart-icon {
+        display: none;
+    }
+
+    .addcart {
+        display: block;
+        position: absolute;
+        right: 50px;
+    }
+}

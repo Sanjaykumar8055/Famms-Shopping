@@ -1,0 +1,41 @@
+.introcontect{
+  text-align: center;
+  background-color: #f7444e;
+  padding: 55px;
+}
+.introcontect h2{
+  font-size: 45px;
+  font-weight: 800;
+  color: aliceblue;
+}
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inpText,
+.inpEmail {
+  height: 50px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.inptextarea {
+  min-height: 150px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.submit {
+  width: 150px;
+  padding: 12px;
+}
